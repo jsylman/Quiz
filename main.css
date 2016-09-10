@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+button, input[type="text"] {
+  padding: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.title {
+  text-align: center;
+}
+
+.container {
+  max-width: 600px;
+  margin: 30px;
+  border: 1px solid grey;
+  padding: 50 px;
+}
+
+h2, h3, form{
+  padding-left: 50px;
+}
+
+h4{
+  padding-left: 10px;
+}
+
+

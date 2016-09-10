@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Math Quiz</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1 class = 'title'>Math Quiz</h1>
+    </div>
+
+  <div class = 'container questionNumber'>
+    <h2 class = 'questionNumber'> Question 1 of 10</h2>
+    </div>
+
+  <div class = 'container question'>
+    <h3 class = 'question'>What is 1 + 1?</h3>
+    <h4> A. 1 </h4>
+    <h4> B. 2 </h4>
+    <h4> C. 3 </h4>
+    <h4> D. 11 </h4>
+    </div>
+
+    <form id="answers">
+      <label for="Answer">Enter Selected Answer</label>
+      <input type="text" name="Answer" id="multiple-choice-answer" placeholder="e.g., A">
+      <button type="submit">Submit</button>
+    </form>
+   
+    <div class = 'container result'>
+    <h2 class = 'questionResult'> Result: </h2>
+    </div>
+
+   <div class = 'container score'>
+    <h2 class = 'score'> 0 correct, 0 incorrect </h2>
+    </div>
+
+  <script src="https://code.jquery.com/jquery.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
