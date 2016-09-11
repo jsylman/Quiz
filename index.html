@@ -10,34 +10,38 @@
 </head>
 <body>
 
-  <div class="container">
+  <div class="container titleImage">
     <h1 class = 'title'>Sesame Street Quiz</h1>
+
     </div>
 
   <div class = 'container questionNumber'>
-    <h2 class = 'questionNumber'> Question 1 of 10</h2>
+    <h2 class = 'questionID'></h2>
+    <button id = "newGame">New Game</button>
     </div>
 
-  <div class = 'container question'>
+  <div class = 'container question hide'>
     <h3 class = 'question'>Who is this character?</h3>
-    <h4> A. Elmo </h4>
-    <h4> B. Zoe </h4>
-    <h4> C. Telly </h4>
-    <h4> D. Cookie Monster </h4>
+    <img src="" id = questionImage>
+    <h4 id = "a" > </h4>
+    <h4 id = "b" > </h4>
+    <h4 id = "c" > </h4>
+    <h4 id = "d" >  </h4>
     </div>
 
     <form id="answers">
-      <label for="Answer">Enter Selected Answer</label>
-      <input type="text" name="Answer" id="multiple-choice-answer" placeholder="e.g., A">
-      <button type="submit">Submit</button>
+      <label for="Answer" class= "hide user">Enter Selected Answer</label>
+      <input type="text" name="Answer" class="multiple-choice-answer hide user" placeholder="e.g., A">
+      <button type="submit" class= "hide user" >Submit</button>
     </form>
    
     <div class = 'container result'>
-    <h2 class = 'questionResult'> Result: </h2>
+    <h3 class = 'questionResult'> </h3>
+    <button id= 'next'>Next Question</button>
     </div>
 
-   <div class = 'container score'>
-    <h2 class = 'score'> 0 correct, 0 incorrect </h2>
+   <div class = 'container hide'>
+    <h2 class = 'score'> 0 Correct, 0 Incorrect </h2>
     </div>
 
   <script src="https://code.jquery.com/jquery.min.js"></script>
