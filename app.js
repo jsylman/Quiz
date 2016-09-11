@@ -3,6 +3,7 @@ $(document).ready(function(){
 	$(".hide").hide();
 	$("#next").hide();
 	$(".result").hide();
+	$("#answers").hide();
 	var newQuiz;
 	var qID;
 	var questionArray;
@@ -44,6 +45,7 @@ $(document).ready(function(){
 		$('.result').hide();
 		newQuiz = Object.create(Quiz);
 		$(".multiple-choice-answer").val("");
+		$('#answers').show();
 		$('.score').text(newQuiz.correct+" Correct, "+newQuiz.incorrect+" Incorrect");
 		printQuestion();
 	};
@@ -52,6 +54,7 @@ $(document).ready(function(){
 		qID= newQuiz.questionID+1
 		questionArray = newQuiz.questions[qID-1]
 		$(".questionID").text('Question '+qID+' of 10');
+		$(".question").text(questionArray.text);
 		$("#questionImage").attr("src",newQuiz.questions[qID-1].picture);
 		$("#a").text('A. '+ questionArray.choices[0]);
 		$("#b").text('B. '+ questionArray.choices[1]);
@@ -102,15 +105,15 @@ $(document).ready(function(){
 	};
 
 	var question2 = {
-		text: "Who is this character?",
+		text: "How about this character?",
 		picture: "images/Bert.png",
 		choices: ["Bert", "Abby", "Elmo", "Zoe"],
 		answer: "a"
 	};
 	var question3 = {
-		text: "Who is this character?",
+		text: "And who is he?",
 		picture: "images/Bigbird.png",
-		choices: ["Big Bird", "Abby", "Elmo", "Zoe"],
+		choices: ["Big Bird", "Cookie Monster", "Elmo", "Oscar"],
 		answer: "a"
 	};
 	var question4 ={
@@ -120,13 +123,13 @@ $(document).ready(function(){
 		answer: "b"
 	};
 	var question5 = {
-		text: "Who is this character?",
+		text: "Who is this Sesame Street superstar?",
 		picture: "images/Elmo.jpeg",
 		choices: ["Big Bird", "Abby", "Elmo", "Zoe"],
 		answer: "c"
 	};
 	var question6 = {
-		text: "Who is this character?",
+		text: "This character is Bert's best friend",
 		picture: "images/Ernie.jpg",
 		choices: ["Ernie", "Abby", "Elmo", "Zoe"],
 		answer: "a"
@@ -138,19 +141,19 @@ $(document).ready(function(){
 		answer: "c"
 	};
 	var question8 = {
-		text: "Who is this character?",
+		text: "Who is this grouchy guy?",
 		picture: "images/Oscar.jpeg",
 		choices: ["Oscar", "Abby", "Elmo", "Zoe"],
 		answer: "a"
 	};
 	var question9 = {
-		text: "Who is this character?",
+		text: "Who is she?",
 		picture: "images/Rosita.jpg",
 		choices: ["Big Bird", "Abby", "Rosita", "Zoe"],
 		answer: "c"
 	};
 	var question10 = {
-		text: "Who is this character?",
+		text: "Last one - who is he?",
 		picture: "images/Snuffy.png",
 		choices: ["Big Bird", "Zoe", "Elmo", "Snuffy"],
 		answer: "d"
